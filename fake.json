@@ -1,0 +1,413 @@
+Object {
+  "config": Object {
+    "adapter": [Function xhrAdapter],
+    "data": "{\"email\":\"olaolaola@ola.com\",\"password\":\"oli\"}",
+    "headers": Object {
+      "Accept": "application/json, text/plain, */*",
+      "Content-Type": "application/json;charset=utf-8",
+    },
+    "maxContentLength": -1,
+    "method": "post",
+    "timeout": 0,
+    "transformRequest": Array [
+      [Function transformRequest],
+    ],
+    "transformResponse": Array [
+      [Function transformResponse],
+    ],
+    "url": "http://www.formatportfolio.com:3000/session",
+    "validateStatus": [Function validateStatus],
+    "xsrfCookieName": "XSRF-TOKEN",
+    "xsrfHeaderName": "X-XSRF-TOKEN",
+  },
+  "data": "<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+  </script>
+    
+<meta charset=\"utf-8\">
+<meta content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0\" name=\"viewport\">
+
+      
+      <script src=\"/static/polyfills/object-assign.self-e5e9d29f9f77fd5025ca153ca46efe7a41aa3c27cbf689a1986aa3f816b97255.js?body=1\"></script>
+<script src=\"/static/application/shared/bundle/formatAnalytics.bundle.self-2517127b5ead140f2eac004b17ff4ea68134ebd4a9412b5529aa352ce87e550b.js?body=1\"></script>
+<script src=\"/static/application/shared/format_analytics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1\"></script>
+      <script type='text/javascript'>
+        window.formatAnalytics = new FormatAnalytics('Li93VCuFZcbFNw6szmGgS5QuCXbweXYm');
+        formatAnalytics.page('', '', {\"path\":\"/login\",\"url\":\"http://www.formatportfolio.com:3000/login\"});
+      </script>
+      <script src=\"/static/application/shared/track_abandon.self-4f2a00cfb9a0b151a2ad58d9e5823b03b00e2fd71428b937dd5eb2bd245bc266.js?body=1\"></script>
+    
+<link rel=\"shortcut icon\" type=\"image/png\" href=\"/static/favicon-32-dcba7f9bf2f2a1428fade4ace25f7c0a0b7201b6eee5dead14de089d6ed357d6.png\" sizes=\"32x32\" />
+<link rel=\"shortcut icon\" type=\"image/png\" href=\"/static/favicon-96-972eb5b3b97a05d486d5b433466ef641bfc2871e7cabf963d300441c5b155224.png\" sizes=\"96x96\" />
+<link rel=\"shortcut icon\" type=\"image/png\" href=\"/static/favicon-192-6341eea34ad98f75312307e38d2a8e3edf97138cbb89c333076f03dc7f1634a9.png\" sizes=\"192x192\" />
+
+<title>Log in — Format</title>
+<link href=\"http://www.formatportfolio.com/login\" rel=\"canonical\">
+<meta name=\"csrf-param\" content=\"authenticity_token\" />
+<meta name=\"csrf-token\" content=\"zwRFDKTWkDR9TpKPXcpeYnKwRYck/KKOZHvX0hbEC6nheWkJpj45sYT3MFVR/OJT1mYKdz5HBwNpiReCZpNTtw==\" />
+<link rel=\"stylesheet\" media=\"screen\" href=\"/static/marketing_next/legacy_styles/styles.self-040be128d540ac449ada74e5d8d0137125b0eee1a902d33288ec4afb3af2cb95.css?body=1\" />
+<link rel=\"stylesheet\" media=\"screen\" href=\"/static/marketing_next/pages/login.self-f1feb834f2b45abe1a793b93df946e2a12e9bf939fa32270d29e05c3f8c486cf.css?body=1\" />
+
+<meta content=\"website\" property=\"og:type\">
+<meta content=\"Online Portfolio - Format\" property=\"og:site_name\">
+<meta content=\"/static/public/format_og_image-21b82a8f69a147b6edb7527b1ae8e52b449a2e57c579951ca68b566168d70c1d.png\" property=\"og:image\">
+<meta content=\"508101044\" property=\"fb:admins\">
+<!--[if lte IE 9]>
+<script src=\"/static/marketing/html5shiv.self-8595d9d9f7305aba0f5da6ebfcfff21fba920b79d9a0086ade600097d56aa4a7.js?body=1\"></script>
+<script src=\"/static/marketing/ie8.self-fdf8a3dabd8a2ccbe7a94b4c932925b90307d8ce7ca965cb51e94cd96cd402f8.js?body=1\"></script>
+<![endif]-->
+
+</head>
+<body class=\"sessions new\">
+
+
+<div class=\"login\">
+<a class=\"logo\" href=\"/\"><img alt=\"Format\" src=\"/static/marketing/marketing_next/logo-876c83a523b1fe231b885e31c5b6028a645f667c0f358166a23ee10525ee148b.svg\" />
+</a><div id=\"login_form\">
+<div class=\"error\">
+<p>Sorry but the password for olaolaola@ola.com was incorrect.</p>
+</div>
+<form novalidate=\"novalidate\" class=\"js-login-form\" action=\"/session\" accept-charset=\"UTF-8\" method=\"post\"><input name=\"utf8\" type=\"hidden\" value=\"&#x2713;\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"RWp7ysKULKPXOyApIJ+gtp2I8wWqzBXFg1YIUMY8a+LxyowSjsJZaE6OZ4WEdp5Bmw/OWef3+iY7zmf20dahog==\" />
+<fieldset>
+<label for=\"email\">Email</label>
+<input type=\"email\" name=\"email\" id=\"email\" value=\"olaolaola@ola.com\" required=\"required\" autofocus=\"autofocus\" />
+</fieldset>
+<fieldset>
+<label for=\"password\">Password</label>
+<a class=\"forgot-password\" href=\"#forgot\" tabindex=\"-1\">I Forgot</a>
+<input type=\"password\" name=\"password\" id=\"password\" required=\"required\" />
+</fieldset>
+<fieldset>
+<table>
+<tr>
+<td>
+<input type=\"submit\" name=\"commit\" value=\"Log in\" class=\"button\" data-disable-with=\"Log in\" />
+</td>
+<td class=\"remember-me\">
+<div class=\"remember-me-checkbox\">
+<input type=\"checkbox\" name=\"remember_me\" id=\"remember_me\" value=\"1\" />
+<label class=\"lbl\" for=\"remember_me\"></label>
+</div>
+<label for=\"remember_me\">Stay Logged In</label>
+</td>
+</tr>
+</table>
+</fieldset>
+</form>
+
+</div>
+<p class=\"auth_divider\">or log in using social media</p>
+<div class=\"signin_oauth_links\">
+<a class=\"auth-facebook\" href=\"/auth/fb\"><img alt=\"Facebook\" src=\"/static/icons/social/oauth/facebook-926f4851bec971bbea377b31efa30fc1fc0be3dee532f9862a0603fa0aab0822.svg\" />
+<span>
+Log in with Facebook
+</span>
+</a><a class=\"auth-google\" href=\"/auth/google\"><img alt=\"Google Plus\" src=\"/static/icons/social/oauth/gplus-ecc21db2fbd203eb255d173eb42a4b9ae5a0366e6fdf54e4439a1111fa03be77.svg\" />
+<span>
+Log in with Google
+</span>
+</a><a class=\"auth-email\" href=\"#\"><img alt=\"Email\" src=\"/static/icons/social/oauth/email-41e2eaafe8ee236f02b33a6ad0751c373be778ae58c57d52279313cf1798a785.svg\" />
+<span>
+Log in using Email
+</span>
+</a>
+
+</div>
+<div id=\"forgot_form\" style=\"display:none\">
+<div class=\"notice\">
+<p>We’ll email you instructions on how to reset your password.</p>
+</div>
+<form novalidate=\"novalidate\" class=\"js-login-form-forgot\" action=\"/forgot\" accept-charset=\"UTF-8\" method=\"post\"><input name=\"utf8\" type=\"hidden\" value=\"&#x2713;\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"df6kEYDZ6R1un4HG5iB+UIr4uWW4e1xPD1y3QfMnOP94q5ztLhRwdhkVzyd1MLQ3HCrVGhv0c5E236VYGMjQBQ==\" />
+<fieldset>
+<label for=\"email\">Email</label>
+<input type=\"email\" name=\"email\" id=\"email\" value=\"\" required=\"required\" />
+</fieldset>
+<fieldset>
+<input type=\"submit\" name=\"commit\" value=\"Reset Password\" class=\"button\" data-disable-with=\"Reset Password\" />
+<div class=\"login-return\">
+<a href=\"#login\" tabindex=\"-1\">Return to Log in</a>
+</div>
+</fieldset>
+</form>
+
+</div>
+</div>
+<div class=\"sign-up\">
+<span>Don’t have an account?</span>
+<a class=\"button translucent\" href=\"/try\">Sign Up</a>
+</div>
+
+<!--[if lte IE 9]>  <![endif]-->
+<script src=\"/static/marketing/ss-social.self-3243cf72080ab3eb95802d13839d215f1f6c8096c7543ad28420d99fd7c73b38.js?body=1\"></script>
+<script src=\"/static/marketing/vendor/jquery.min.self-e60903d98b8d227294364e4f85fb15d3119a32495e6e3aa29f188f7264bd9f0e.js?body=1\"></script>
+<script src=\"/static/marketing/vendor/jquery.easing.self-55a240acfa5f94e2c7c844e35e6d6916ce1e3680b32a9df68fb9ca9cb2b42975.js?body=1\"></script>
+<script src=\"/static/marketing/vendor/jquery.placeholder.self-974a15e3c1f64a41c42b71eebca2b6369bac46e723f9b3426e784b06b29be4fe.js?body=1\"></script>
+<script src=\"/static/marketing/vendor/jquery.flexslider.self-c086dc28a869d49a81c1149fd9487efbe9cf97feb188aa0e3a5b7d5ec74fe023.js?body=1\"></script>
+<script src=\"/static/marketing/vendor/imagesloaded.self-ff3785a0d5e3eeb9ce0e37b2067b461f4b444b6bd529703be201784fe799170c.js?body=1\"></script>
+<script src=\"/static/marketing/vendor/isotope.self-7efc5328bce3b67bd516aa6b84e08791970cc1463a88ddc48b45d1ca5ae37f0f.js?body=1\"></script>
+<script src=\"/static/marketing/vendor/picturefill.self-bf08f0ddd332f48bfcd55a56e1dba457e0c3096605fce5ad65d3875758631750.js?body=1\"></script>
+<script src=\"/static/marketing/vendor.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1\"></script>
+<script src=\"/static/marketing_next/pages/landing_pages/scripts.self-128a7da579a0c4974aa8890682be6f6ca21883615ecd41b2e2d70b4535977525.js?body=1\"></script>
+<script src=\"/static/jquery.backstretch.min.self-6fa7638a32d803fbd92452bd9773e427fcc9373f10430a3efc12e9994042873c.js?body=1\"></script>
+<script src=\"/static/jquery.validate-1.13.self-d8c65b3aa8468a405aaba603472a61d397d36edf46a0418231b9c0ef0cc8ad31.js?body=1\"></script>
+<script src=\"/static/marketing_next/pages/login.self-31a68c081793c6fee83da0032830d3df9d1b2aea687e25890e60c2a4a68a4625.js?body=1\"></script>
+<script src=\"/static/marketing_next/browser_support_check.self-d51ea69027f0ae879147cf34b9461aaae3e51ea236f027e1d44a41d325399457.js?body=1\"></script>
+
+<script async type=\"text/javascript\" id=\"mini-profiler\" src=\"/mini-profiler-resources/includes.js?v=355f78011d9b95de14a5b1014b088681\" data-version=\"355f78011d9b95de14a5b1014b088681\" data-path=\"/mini-profiler-resources/\" data-current-id=\"7t8qa8qn49lb034pah9t\" data-ids=\"7t8qa8qn49lb034pah9t,38yeihcevan3rr6qg5mz,b25k2v2ve2i4gqyy6dyv,8heoaryemnbt6ypmtr9y,dbvzwt5oon14gfjkvgqf,8u1tol1cn1gdnvl5tgy1,z0078xbsyf4iw8yi7dgr,myhil4bsrl6yr1uy92zz,kwuwvuwlzxm0atnsfg05,fju2zn4jk158j6obef69,wu8u87wr9dlerkmd0ahq,tqrfp4hkdgoua4wf9d8r,vffco78vsg3b5ogwrmde,ho6nzye1oiojp66piow3,3rwxc7wyp6pbs54a0365,ydbkvv65ykk1ved34dtc,kdhxritwpcikh2uea4s1\" data-horizontal-position=\"left\" data-vertical-position=\"top\" data-trivial=\"false\" data-children=\"false\" data-max-traces=\"20\" data-controls=\"false\" data-total-sql-count=\"false\" data-authorized=\"true\" data-toggle-shortcut=\"Alt+P\" data-start-hidden=\"false\" data-collapse-results=\"true\" data-html-container=\"body\"></script>
+</body>
+</html>
+",
+  "headers": Object {
+    "cache-control": "no-store, must-revalidate, private, max-age=0",
+    "content-length": "8847",
+    "content-type": "text/html; charset=utf-8",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "set-cookie": Array [
+      "_gallery_session=dlFOSWlzcEZ3ZlF4UVNZMFRnSVZMcEFXUyt6L0RlTXR6VkpEL0JkOStid1dUTG9TWS9HakNuRHA4WUlDNDBGUXlKRTNRNjBWekd5SXQ2TXR4UnlIbE9pb1kyOWE1eTV2RXNxaEJhd0lFMXNzU2tYZklvNlhXNWlUZTRlM3FCc0lSOXpxYWovY0JqMDFFK21pcmdXUHJhc0hnTkJ6QjFKMS9kR0VSY0VOK3pQeDBLaGZFem5oc0ZyZ2oxbGdiR2VvTEhpbmYybkFVNkRmTk9CTy9nRXljekNCMCtwTm42U2V3dHNOQXJyOTB1bldmTUNNSExaQTBvdkVCL1hnN2VLamZBMUgxVHNyZGF5S2ZhNEhEOWw3dUE9PS0ta2VlVmZneHVpSjJIRXB1emVMU2dzUT09--195a2b09ef160dd095ab0d1832f6eec5ab549673; path=/; HttpOnly, request_method=; path=/; max-age=0; expires=Thu, 01 Jan 1970 00:00:00 -0000, subdomain=; domain=www.formatportfolio.com; path=/; max-age=0; expires=Thu, 01 Jan 1970 00:00:00 -0000, __profilin=p%3Dt; path=/; HttpOnly",
+    ],
+    "x-content-type-options": "nosniff",
+    "x-download-options": "noopen",
+    "x-frame-options": "SAMEORIGIN",
+    "x-meta-request-version": "0.6.0",
+    "x-miniprofiler-ids": "[\"7t8qa8qn49lb034pah9t\",\"38yeihcevan3rr6qg5mz\",\"b25k2v2ve2i4gqyy6dyv\",\"8heoaryemnbt6ypmtr9y\",\"dbvzwt5oon14gfjkvgqf\",\"8u1tol1cn1gdnvl5tgy1\",\"z0078xbsyf4iw8yi7dgr\",\"myhil4bsrl6yr1uy92zz\",\"kwuwvuwlzxm0atnsfg05\",\"fju2zn4jk158j6obef69\",\"wu8u87wr9dlerkmd0ahq\",\"tqrfp4hkdgoua4wf9d8r\",\"vffco78vsg3b5ogwrmde\",\"ho6nzye1oiojp66piow3\",\"3rwxc7wyp6pbs54a0365\",\"ydbkvv65ykk1ved34dtc\",\"kdhxritwpcikh2uea4s1\"]",
+    "x-miniprofiler-original-cache-control": "private, s-maxage=0",
+    "x-permitted-cross-domain-policies": "none",
+    "x-request-id": "aa8f7521-18b3-4d59-8317-e53b4d259642",
+    "x-runtime": "0.185056",
+    "x-xss-protection": "1; mode=block",
+  },
+  "request": XMLHttpRequest {
+    "DONE": 4,
+    "HEADERS_RECEIVED": 2,
+    "LOADING": 3,
+    "OPENED": 1,
+    "UNSENT": 0,
+    "_aborted": false,
+    "_cachedResponse": undefined,
+    "_hasError": false,
+    "_headers": Object {
+      "accept": "application/json, text/plain, */*",
+      "content-type": "application/json;charset=utf-8",
+    },
+    "_incrementalEvents": false,
+    "_lowerCaseResponseHeaders": Object {
+      "cache-control": "no-store, must-revalidate, private, max-age=0",
+      "content-length": "8847",
+      "content-type": "text/html; charset=utf-8",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "set-cookie": "_gallery_session=dlFOSWlzcEZ3ZlF4UVNZMFRnSVZMcEFXUyt6L0RlTXR6VkpEL0JkOStid1dUTG9TWS9HakNuRHA4WUlDNDBGUXlKRTNRNjBWekd5SXQ2TXR4UnlIbE9pb1kyOWE1eTV2RXNxaEJhd0lFMXNzU2tYZklvNlhXNWlUZTRlM3FCc0lSOXpxYWovY0JqMDFFK21pcmdXUHJhc0hnTkJ6QjFKMS9kR0VSY0VOK3pQeDBLaGZFem5oc0ZyZ2oxbGdiR2VvTEhpbmYybkFVNkRmTk9CTy9nRXljekNCMCtwTm42U2V3dHNOQXJyOTB1bldmTUNNSExaQTBvdkVCL1hnN2VLamZBMUgxVHNyZGF5S2ZhNEhEOWw3dUE9PS0ta2VlVmZneHVpSjJIRXB1emVMU2dzUT09--195a2b09ef160dd095ab0d1832f6eec5ab549673; path=/; HttpOnly, request_method=; path=/; max-age=0; expires=Thu, 01 Jan 1970 00:00:00 -0000, subdomain=; domain=www.formatportfolio.com; path=/; max-age=0; expires=Thu, 01 Jan 1970 00:00:00 -0000, __profilin=p%3Dt; path=/; HttpOnly",
+      "x-content-type-options": "nosniff",
+      "x-download-options": "noopen",
+      "x-frame-options": "SAMEORIGIN",
+      "x-meta-request-version": "0.6.0",
+      "x-miniprofiler-ids": "[\"7t8qa8qn49lb034pah9t\",\"38yeihcevan3rr6qg5mz\",\"b25k2v2ve2i4gqyy6dyv\",\"8heoaryemnbt6ypmtr9y\",\"dbvzwt5oon14gfjkvgqf\",\"8u1tol1cn1gdnvl5tgy1\",\"z0078xbsyf4iw8yi7dgr\",\"myhil4bsrl6yr1uy92zz\",\"kwuwvuwlzxm0atnsfg05\",\"fju2zn4jk158j6obef69\",\"wu8u87wr9dlerkmd0ahq\",\"tqrfp4hkdgoua4wf9d8r\",\"vffco78vsg3b5ogwrmde\",\"ho6nzye1oiojp66piow3\",\"3rwxc7wyp6pbs54a0365\",\"ydbkvv65ykk1ved34dtc\",\"kdhxritwpcikh2uea4s1\"]",
+      "x-miniprofiler-original-cache-control": "private, s-maxage=0",
+      "x-permitted-cross-domain-policies": "none",
+      "x-request-id": "aa8f7521-18b3-4d59-8317-e53b4d259642",
+      "x-runtime": "0.185056",
+      "x-xss-protection": "1; mode=block",
+    },
+    "_method": "POST",
+    "_requestId": null,
+    "_response": "<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+  </script>
+    
+<meta charset=\"utf-8\">
+<meta content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0\" name=\"viewport\">
+
+      
+      <script src=\"/static/polyfills/object-assign.self-e5e9d29f9f77fd5025ca153ca46efe7a41aa3c27cbf689a1986aa3f816b97255.js?body=1\"></script>
+<script src=\"/static/application/shared/bundle/formatAnalytics.bundle.self-2517127b5ead140f2eac004b17ff4ea68134ebd4a9412b5529aa352ce87e550b.js?body=1\"></script>
+<script src=\"/static/application/shared/format_analytics.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1\"></script>
+      <script type='text/javascript'>
+        window.formatAnalytics = new FormatAnalytics('Li93VCuFZcbFNw6szmGgS5QuCXbweXYm');
+        formatAnalytics.page('', '', {\"path\":\"/login\",\"url\":\"http://www.formatportfolio.com:3000/login\"});
+      </script>
+      <script src=\"/static/application/shared/track_abandon.self-4f2a00cfb9a0b151a2ad58d9e5823b03b00e2fd71428b937dd5eb2bd245bc266.js?body=1\"></script>
+    
+<link rel=\"shortcut icon\" type=\"image/png\" href=\"/static/favicon-32-dcba7f9bf2f2a1428fade4ace25f7c0a0b7201b6eee5dead14de089d6ed357d6.png\" sizes=\"32x32\" />
+<link rel=\"shortcut icon\" type=\"image/png\" href=\"/static/favicon-96-972eb5b3b97a05d486d5b433466ef641bfc2871e7cabf963d300441c5b155224.png\" sizes=\"96x96\" />
+<link rel=\"shortcut icon\" type=\"image/png\" href=\"/static/favicon-192-6341eea34ad98f75312307e38d2a8e3edf97138cbb89c333076f03dc7f1634a9.png\" sizes=\"192x192\" />
+
+<title>Log in — Format</title>
+<link href=\"http://www.formatportfolio.com/login\" rel=\"canonical\">
+<meta name=\"csrf-param\" content=\"authenticity_token\" />
+<meta name=\"csrf-token\" content=\"zwRFDKTWkDR9TpKPXcpeYnKwRYck/KKOZHvX0hbEC6nheWkJpj45sYT3MFVR/OJT1mYKdz5HBwNpiReCZpNTtw==\" />
+<link rel=\"stylesheet\" media=\"screen\" href=\"/static/marketing_next/legacy_styles/styles.self-040be128d540ac449ada74e5d8d0137125b0eee1a902d33288ec4afb3af2cb95.css?body=1\" />
+<link rel=\"stylesheet\" media=\"screen\" href=\"/static/marketing_next/pages/login.self-f1feb834f2b45abe1a793b93df946e2a12e9bf939fa32270d29e05c3f8c486cf.css?body=1\" />
+
+<meta content=\"website\" property=\"og:type\">
+<meta content=\"Online Portfolio - Format\" property=\"og:site_name\">
+<meta content=\"/static/public/format_og_image-21b82a8f69a147b6edb7527b1ae8e52b449a2e57c579951ca68b566168d70c1d.png\" property=\"og:image\">
+<meta content=\"508101044\" property=\"fb:admins\">
+<!--[if lte IE 9]>
+<script src=\"/static/marketing/html5shiv.self-8595d9d9f7305aba0f5da6ebfcfff21fba920b79d9a0086ade600097d56aa4a7.js?body=1\"></script>
+<script src=\"/static/marketing/ie8.self-fdf8a3dabd8a2ccbe7a94b4c932925b90307d8ce7ca965cb51e94cd96cd402f8.js?body=1\"></script>
+<![endif]-->
+
+</head>
+<body class=\"sessions new\">
+
+
+<div class=\"login\">
+<a class=\"logo\" href=\"/\"><img alt=\"Format\" src=\"/static/marketing/marketing_next/logo-876c83a523b1fe231b885e31c5b6028a645f667c0f358166a23ee10525ee148b.svg\" />
+</a><div id=\"login_form\">
+<div class=\"error\">
+<p>Sorry but the password for olaolaola@ola.com was incorrect.</p>
+</div>
+<form novalidate=\"novalidate\" class=\"js-login-form\" action=\"/session\" accept-charset=\"UTF-8\" method=\"post\"><input name=\"utf8\" type=\"hidden\" value=\"&#x2713;\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"RWp7ysKULKPXOyApIJ+gtp2I8wWqzBXFg1YIUMY8a+LxyowSjsJZaE6OZ4WEdp5Bmw/OWef3+iY7zmf20dahog==\" />
+<fieldset>
+<label for=\"email\">Email</label>
+<input type=\"email\" name=\"email\" id=\"email\" value=\"olaolaola@ola.com\" required=\"required\" autofocus=\"autofocus\" />
+</fieldset>
+<fieldset>
+<label for=\"password\">Password</label>
+<a class=\"forgot-password\" href=\"#forgot\" tabindex=\"-1\">I Forgot</a>
+<input type=\"password\" name=\"password\" id=\"password\" required=\"required\" />
+</fieldset>
+<fieldset>
+<table>
+<tr>
+<td>
+<input type=\"submit\" name=\"commit\" value=\"Log in\" class=\"button\" data-disable-with=\"Log in\" />
+</td>
+<td class=\"remember-me\">
+<div class=\"remember-me-checkbox\">
+<input type=\"checkbox\" name=\"remember_me\" id=\"remember_me\" value=\"1\" />
+<label class=\"lbl\" for=\"remember_me\"></label>
+</div>
+<label for=\"remember_me\">Stay Logged In</label>
+</td>
+</tr>
+</table>
+</fieldset>
+</form>
+
+</div>
+<p class=\"auth_divider\">or log in using social media</p>
+<div class=\"signin_oauth_links\">
+<a class=\"auth-facebook\" href=\"/auth/fb\"><img alt=\"Facebook\" src=\"/static/icons/social/oauth/facebook-926f4851bec971bbea377b31efa30fc1fc0be3dee532f9862a0603fa0aab0822.svg\" />
+<span>
+Log in with Facebook
+</span>
+</a><a class=\"auth-google\" href=\"/auth/google\"><img alt=\"Google Plus\" src=\"/static/icons/social/oauth/gplus-ecc21db2fbd203eb255d173eb42a4b9ae5a0366e6fdf54e4439a1111fa03be77.svg\" />
+<span>
+Log in with Google
+</span>
+</a><a class=\"auth-email\" href=\"#\"><img alt=\"Email\" src=\"/static/icons/social/oauth/email-41e2eaafe8ee236f02b33a6ad0751c373be778ae58c57d52279313cf1798a785.svg\" />
+<span>
+Log in using Email
+</span>
+</a>
+
+</div>
+<div id=\"forgot_form\" style=\"display:none\">
+<div class=\"notice\">
+<p>We’ll email you instructions on how to reset your password.</p>
+</div>
+<form novalidate=\"novalidate\" class=\"js-login-form-forgot\" action=\"/forgot\" accept-charset=\"UTF-8\" method=\"post\"><input name=\"utf8\" type=\"hidden\" value=\"&#x2713;\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"df6kEYDZ6R1un4HG5iB+UIr4uWW4e1xPD1y3QfMnOP94q5ztLhRwdhkVzyd1MLQ3HCrVGhv0c5E236VYGMjQBQ==\" />
+<fieldset>
+<label for=\"email\">Email</label>
+<input type=\"email\" name=\"email\" id=\"email\" value=\"\" required=\"required\" />
+</fieldset>
+<fieldset>
+<input type=\"submit\" name=\"commit\" value=\"Reset Password\" class=\"button\" data-disable-with=\"Reset Password\" />
+<div class=\"login-return\">
+<a href=\"#login\" tabindex=\"-1\">Return to Log in</a>
+</div>
+</fieldset>
+</form>
+
+</div>
+</div>
+<div class=\"sign-up\">
+<span>Don’t have an account?</span>
+<a class=\"button translucent\" href=\"/try\">Sign Up</a>
+</div>
+
+<!--[if lte IE 9]>  <![endif]-->
+<script src=\"/static/marketing/ss-social.self-3243cf72080ab3eb95802d13839d215f1f6c8096c7543ad28420d99fd7c73b38.js?body=1\"></script>
+<script src=\"/static/marketing/vendor/jquery.min.self-e60903d98b8d227294364e4f85fb15d3119a32495e6e3aa29f188f7264bd9f0e.js?body=1\"></script>
+<script src=\"/static/marketing/vendor/jquery.easing.self-55a240acfa5f94e2c7c844e35e6d6916ce1e3680b32a9df68fb9ca9cb2b42975.js?body=1\"></script>
+<script src=\"/static/marketing/vendor/jquery.placeholder.self-974a15e3c1f64a41c42b71eebca2b6369bac46e723f9b3426e784b06b29be4fe.js?body=1\"></script>
+<script src=\"/static/marketing/vendor/jquery.flexslider.self-c086dc28a869d49a81c1149fd9487efbe9cf97feb188aa0e3a5b7d5ec74fe023.js?body=1\"></script>
+<script src=\"/static/marketing/vendor/imagesloaded.self-ff3785a0d5e3eeb9ce0e37b2067b461f4b444b6bd529703be201784fe799170c.js?body=1\"></script>
+<script src=\"/static/marketing/vendor/isotope.self-7efc5328bce3b67bd516aa6b84e08791970cc1463a88ddc48b45d1ca5ae37f0f.js?body=1\"></script>
+<script src=\"/static/marketing/vendor/picturefill.self-bf08f0ddd332f48bfcd55a56e1dba457e0c3096605fce5ad65d3875758631750.js?body=1\"></script>
+<script src=\"/static/marketing/vendor.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1\"></script>
+<script src=\"/static/marketing_next/pages/landing_pages/scripts.self-128a7da579a0c4974aa8890682be6f6ca21883615ecd41b2e2d70b4535977525.js?body=1\"></script>
+<script src=\"/static/jquery.backstretch.min.self-6fa7638a32d803fbd92452bd9773e427fcc9373f10430a3efc12e9994042873c.js?body=1\"></script>
+<script src=\"/static/jquery.validate-1.13.self-d8c65b3aa8468a405aaba603472a61d397d36edf46a0418231b9c0ef0cc8ad31.js?body=1\"></script>
+<script src=\"/static/marketing_next/pages/login.self-31a68c081793c6fee83da0032830d3df9d1b2aea687e25890e60c2a4a68a4625.js?body=1\"></script>
+<script src=\"/static/marketing_next/browser_support_check.self-d51ea69027f0ae879147cf34b9461aaae3e51ea236f027e1d44a41d325399457.js?body=1\"></script>
+
+<script async type=\"text/javascript\" id=\"mini-profiler\" src=\"/mini-profiler-resources/includes.js?v=355f78011d9b95de14a5b1014b088681\" data-version=\"355f78011d9b95de14a5b1014b088681\" data-path=\"/mini-profiler-resources/\" data-current-id=\"7t8qa8qn49lb034pah9t\" data-ids=\"7t8qa8qn49lb034pah9t,38yeihcevan3rr6qg5mz,b25k2v2ve2i4gqyy6dyv,8heoaryemnbt6ypmtr9y,dbvzwt5oon14gfjkvgqf,8u1tol1cn1gdnvl5tgy1,z0078xbsyf4iw8yi7dgr,myhil4bsrl6yr1uy92zz,kwuwvuwlzxm0atnsfg05,fju2zn4jk158j6obef69,wu8u87wr9dlerkmd0ahq,tqrfp4hkdgoua4wf9d8r,vffco78vsg3b5ogwrmde,ho6nzye1oiojp66piow3,3rwxc7wyp6pbs54a0365,ydbkvv65ykk1ved34dtc,kdhxritwpcikh2uea4s1\" data-horizontal-position=\"left\" data-vertical-position=\"top\" data-trivial=\"false\" data-children=\"false\" data-max-traces=\"20\" data-controls=\"false\" data-total-sql-count=\"false\" data-authorized=\"true\" data-toggle-shortcut=\"Alt+P\" data-start-hidden=\"false\" data-collapse-results=\"true\" data-html-container=\"body\"></script>
+</body>
+</html>
+",
+    "_responseType": "",
+    "_sent": true,
+    "_subscriptions": Array [],
+    "_timedOut": false,
+    "_trackingName": "unknown",
+    "_url": "http://www.formatportfolio.com:3000/session",
+    "readyState": 4,
+    "responseHeaders": Object {
+      "Cache-Control": "no-store, must-revalidate, private, max-age=0",
+      "Content-Length": "8847",
+      "Content-Type": "text/html; charset=utf-8",
+      "Referrer-Policy": "strict-origin-when-cross-origin",
+      "Set-Cookie": "_gallery_session=dlFOSWlzcEZ3ZlF4UVNZMFRnSVZMcEFXUyt6L0RlTXR6VkpEL0JkOStid1dUTG9TWS9HakNuRHA4WUlDNDBGUXlKRTNRNjBWekd5SXQ2TXR4UnlIbE9pb1kyOWE1eTV2RXNxaEJhd0lFMXNzU2tYZklvNlhXNWlUZTRlM3FCc0lSOXpxYWovY0JqMDFFK21pcmdXUHJhc0hnTkJ6QjFKMS9kR0VSY0VOK3pQeDBLaGZFem5oc0ZyZ2oxbGdiR2VvTEhpbmYybkFVNkRmTk9CTy9nRXljekNCMCtwTm42U2V3dHNOQXJyOTB1bldmTUNNSExaQTBvdkVCL1hnN2VLamZBMUgxVHNyZGF5S2ZhNEhEOWw3dUE9PS0ta2VlVmZneHVpSjJIRXB1emVMU2dzUT09--195a2b09ef160dd095ab0d1832f6eec5ab549673; path=/; HttpOnly, request_method=; path=/; max-age=0; expires=Thu, 01 Jan 1970 00:00:00 -0000, subdomain=; domain=www.formatportfolio.com; path=/; max-age=0; expires=Thu, 01 Jan 1970 00:00:00 -0000, __profilin=p%3Dt; path=/; HttpOnly",
+      "X-Content-Type-Options": "nosniff",
+      "X-Download-Options": "noopen",
+      "X-Frame-Options": "SAMEORIGIN",
+      "X-Meta-Request-Version": "0.6.0",
+      "X-MiniProfiler-Ids": "[\"7t8qa8qn49lb034pah9t\",\"38yeihcevan3rr6qg5mz\",\"b25k2v2ve2i4gqyy6dyv\",\"8heoaryemnbt6ypmtr9y\",\"dbvzwt5oon14gfjkvgqf\",\"8u1tol1cn1gdnvl5tgy1\",\"z0078xbsyf4iw8yi7dgr\",\"myhil4bsrl6yr1uy92zz\",\"kwuwvuwlzxm0atnsfg05\",\"fju2zn4jk158j6obef69\",\"wu8u87wr9dlerkmd0ahq\",\"tqrfp4hkdgoua4wf9d8r\",\"vffco78vsg3b5ogwrmde\",\"ho6nzye1oiojp66piow3\",\"3rwxc7wyp6pbs54a0365\",\"ydbkvv65ykk1ved34dtc\",\"kdhxritwpcikh2uea4s1\"]",
+      "X-MiniProfiler-Original-Cache-Control": "private, s-maxage=0",
+      "X-Permitted-Cross-Domain-Policies": "none",
+      "X-Request-Id": "aa8f7521-18b3-4d59-8317-e53b4d259642",
+      "X-Runtime": "0.185056",
+      "X-XSS-Protection": "1; mode=block",
+    },
+    "responseURL": "http://www.formatportfolio.com:3000/login",
+    "status": 200,
+    "timeout": 0,
+    "upload": XMLHttpRequestEventTarget {
+      Symbol(listeners): Object {},
+    },
+    "withCredentials": true,
+    Symbol(listeners): Object {
+      "abort": Object {
+        "kind": 3,
+        "listener": [Function handleAbort],
+        "next": null,
+      },
+      "error": Object {
+        "kind": 3,
+        "listener": [Function handleError],
+        "next": null,
+      },
+      "readystatechange": Object {
+        "kind": 3,
+        "listener": [Function handleLoad],
+        "next": null,
+      },
+      "timeout": Object {
+        "kind": 3,
+        "listener": [Function handleTimeout],
+        "next": null,
+      },
+    },
+  },
+  "status": 200,
+  "statusText": undefined,
+}

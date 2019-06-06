@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
-import LoginScreen from '../screens/login-screen';
-import HomeScreen from '../screens/home-screen';
+import WelcomeScreenNavigator from '../navigation/welcome-navigator';
+import AnimatedWelcomeScreen from '../screens/animated-welcome-screen';
 
 // export default createAppContainer(createSwitchNavigator({
 //   // You could add another route here for authentication.
@@ -10,8 +10,8 @@ import HomeScreen from '../screens/home-screen';
 // }));
 
 const AppSwitchNavigator = createSwitchNavigator({
-  Login: { screen: LoginScreen },
-  HomeScreen: { screen: HomeScreen }
-});
+  AnimatedWelcomeScreen: { screen: AnimatedWelcomeScreen },
+  WelcomeScreenNavigator: { screen: WelcomeScreenNavigator },
+}, { initialRouteName: 'AnimatedWelcomeScreen' });
 
 export default createAppContainer(AppSwitchNavigator);

@@ -3,9 +3,9 @@ import { ScrollView, StyleSheet, View, TouchableOpacity, Image, Animated, Activi
 import { styleBits, primaryColor, fullHeight, fullWidth } from '../utils/stylesheets';
 import { BasierSquareBold } from  '../utils/styled-texts';
 
-export default class LoginScreen extends React.Component {
+export default class WelcomeScreen extends React.Component {
   static navigationOptions = {
-    title: 'Login',
+    title: 'Welcome',
   };
 
   state = {
@@ -30,7 +30,7 @@ export default class LoginScreen extends React.Component {
         <View style={{
           alignSelf: 'center',
           position: 'absolute',
-          top: fullHeight * 0.12
+          top: fullHeight * 0.12,
         }}>
           <Image source={require('../assets/images/logo-png.png')} style={{
             height: fullHeight * 0.021,
@@ -40,20 +40,36 @@ export default class LoginScreen extends React.Component {
         <View style={[{
         }, styles.blackRect]}>
           <BasierSquareBold style={styles.blackRectText}>
-            Login
+            Zen
           </BasierSquareBold>
           <BasierSquareBold style={[styles.blackRectText, styles.blackRectText2]}>
-            Screen
+            Proofing
           </BasierSquareBold>
         </View>
         <TouchableOpacity
           title="Login"
           onPress={() => this.checkIfLoggedIn()}
-          style={[ styles.touchableWrap, styleBits.buttonOutline]}
+          style={[ {
+            left: -120,
+          }, styles.touchableWrap ]}
         >
-          <BasierSquareBold style={[ styleBits.primaryScreenText, styles.touchableText ]}>
-            I want to see a pretty pretty text here
-          </BasierSquareBold>
+          <BasierSquare style={[ {
+            textAlign: 'right',
+          }, styleBits.primaryScreenText, styles.touchableText ]}>
+            Login
+          </BasierSquare>
+        </TouchableOpacity>
+        <TouchableOpacity
+          title="Login"
+          onPress={() => this.checkIfLoggedIn()}
+          style={[ {
+            right: -80,
+            textAlign: 'left'
+          }, styles.touchableWrap ]}
+        >
+          <BasierSquare style={[ styleBits.primaryScreenText, styles.touchableText ]}>
+            Signup
+          </BasierSquare>
         </TouchableOpacity>
       </ScrollView>
     );
@@ -88,7 +104,11 @@ const styles = StyleSheet.create({
   touchableWrap: {
     marginLeft: 30,
     width: 200,
-    display: 'none'
+    position: 'absolute',
+    bottom: fullHeight * 0.35,
+    borderRadius: 30,
+    backgroundColor: '#000000',
+    padding: 20
   },
   touchableText: {
     fontSize: 23,

@@ -3,9 +3,9 @@ import {
   ActivityIndicator,
   AsyncStorage,
   Button,
-  StyleSheet,
-  View,
+  StyleSheet
 } from 'react-native';
+import { View, Text } from 'react-native-tailwind'
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -14,7 +14,7 @@ export default class HomeScreen extends React.Component {
 
   render() {
     return (
-      <View>
+      <View className="items-center bg-black">
         <Button title="Show me more of the app" onPress={this._showMoreApp} />
         <Button title="Actually, sign me out :)" onPress={this._signOutAsync} />
       </View>

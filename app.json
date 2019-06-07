@@ -25,6 +25,7 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "ReactNative app for a Zen Proofing experience, check out the repo https://github.com/4ormat/zenProofingApp"
   }
 }

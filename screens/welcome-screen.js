@@ -31,8 +31,8 @@ export default class WelcomeScreen extends React.Component {
           top: fullHeight * 0.12,
         }}>
           <Image source={require('../assets/images/logo-png.png')} style={{
-            height: fullHeight * 0.021,
-            width: fullWidth * 0.20,
+            height: fullHeight * 0.027,
+            width: fullWidth * 0.22,
           }}/>
         </View>
         <Transition appear='top' disappear='flip' shared='thisParticularRect'>
@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
   blackRect: {
     backgroundColor: '#000000',
     width: fullWidth * 0.8,
-    height: 345,
+    height: fullHeight * 0.35,
     marginTop: 123,
     alignSelf: 'center',
   },

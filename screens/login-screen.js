@@ -49,8 +49,8 @@ export default class LoginScreen extends React.Component {
           top: fullHeight * 0.12
         }}>
           <Image source={require('../assets/images/logo-png.png')} style={{
-            height: fullHeight * 0.021,
-            width: fullWidth * 0.20,
+            height: fullHeight * 0.027,
+            width: fullWidth * 0.22,
           }}/>
         </View>
         <View style={{
@@ -171,7 +171,7 @@ const styles = StyleSheet.create({
   },
   title: {
     alignSelf: 'center',
-    fontSize: 35
+    fontSize: fullHeight * 0.038
   },
   input: {
     marginTop: fullHeight * 0.04,

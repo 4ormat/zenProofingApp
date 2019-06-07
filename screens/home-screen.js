@@ -47,8 +47,8 @@ export default class HomeScreen extends React.Component {
           top: fullHeight * 0.12,
         }}>
           <Image source={require('../assets/images/logo-png.png')} style={{
-            height: fullHeight * 0.021,
-            width: fullWidth * 0.20,
+            height: fullHeight * 0.027,
+            width: fullWidth * 0.22,
           }}/>
         </View>
         <BasierSquareBold style={[ styles.title ]}>

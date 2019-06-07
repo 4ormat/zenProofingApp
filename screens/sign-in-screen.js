@@ -10,27 +10,9 @@ export default class LoginScreen extends React.Component {
   };
 
   state = {
-    text: ''
-    // lowerConfetti: new Animated.Value(10),
-    // showConfetti: new Animated.Value(0.5)
+    email: '',
+    password: ''
   }
-
-  componentDidMount() {
-    // Animated.parallel([
-    //   Animated.timing(this.state.lowerConfetti, {
-    //     toValue: 0,
-    //     duration: 300
-    //   }),
-    //   Animated.timing(this.showConfetti, {
-    //     toValue: 1,
-    //     duration: 300
-    //   })
-    // ]).start();
-  }
-
-  checkIfLoggedIn = () => {
-    this.props.navigation.navigate('Home');
-  };
 
   render() {
     return (
@@ -45,13 +27,13 @@ export default class LoginScreen extends React.Component {
           top: fullHeight * 0.12
         }}>
           <Image source={require('../assets/images/logo-png.png')} style={{
-            height: fullHeight * 0.021,
-            width: fullWidth * 0.20,
+            height: fullHeight * 0.027,
+            width: fullWidth * 0.22,
           }}/>
         </View>
         <View style={{
           position: 'absolute',
-          top: fullHeight * 0.33,
+          bottom: fullHeight * 0.53,
           right: 0,
           opacity: 0.75
         }}>
@@ -130,23 +112,6 @@ const styles = StyleSheet.create({
   topRect: {
     backgroundColor: '#ffffff'
   },
-  blackRect: {
-    backgroundColor: '#000000',
-    width: fullWidth * 0.8,
-    height: 345,
-    marginTop: 123,
-    alignSelf: 'center',
-  },
-  blackRectText: {
-    color: primaryColor,
-    fontSize: 54,
-    position: 'absolute',
-    top: 25,
-    left: 32
-  },
-  blackRectText2: {
-    top: 88
-  },
   touchableWrap: {
     marginLeft: 30,
     width: 200,
@@ -171,7 +136,7 @@ const styles = StyleSheet.create({
   },
   title: {
     alignSelf: 'center',
-    fontSize: 35
+    fontSize: fullHeight * 0.038
   },
   input: {
     marginTop: fullHeight * 0.04,

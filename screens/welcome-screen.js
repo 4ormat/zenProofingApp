@@ -1,24 +1,22 @@
 import React from 'react';
 import { ScrollView, StyleSheet, View, TouchableOpacity, Image, Animated, ActivityIndicator } from 'react-native';
 import { styleBits, primaryColor, fullHeight, fullWidth } from '../utils/stylesheets';
-import { BasierSquareBold } from  '../utils/styled-texts';
+import { BasierSquareBold, BasierSquare } from  '../utils/styled-texts';
+import { Transition } from 'react-navigation-fluid-transitions';
 
 export default class WelcomeScreen extends React.Component {
   static navigationOptions = {
     title: 'Welcome',
   };
 
-  state = {
-    
+  customFadeTransition = (transitionInfo) => {
+    const { progress, start, end } = transitionInfo;
+    const opacityInterpolation = progress.interpolate({
+      inputRange: [0, start, end, 1],
+      outputRange: [1, start, end, 0],
+    });
+    return { opacity: opacityInterpolation };
   }
-
-  componentDidMount() {
-    
-  }
-
-  checkIfLoggedIn = () => {
-    this.props.navigation.navigate('Home');
-  };
 
   render() {
     return (
@@ -37,40 +35,46 @@ export default class WelcomeScreen extends React.Component {
             width: fullWidth * 0.20,
           }}/>
         </View>
-        <View style={[{
-        }, styles.blackRect]}>
-          <BasierSquareBold style={styles.blackRectText}>
-            Zen
-          </BasierSquareBold>
-          <BasierSquareBold style={[styles.blackRectText, styles.blackRectText2]}>
-            Proofing
-          </BasierSquareBold>
-        </View>
-        <TouchableOpacity
-          title="Login"
-          onPress={() => this.checkIfLoggedIn()}
-          style={[ {
-            left: -120,
-          }, styles.touchableWrap ]}
-        >
-          <BasierSquare style={[ {
-            textAlign: 'right',
-          }, styleBits.primaryScreenText, styles.touchableText ]}>
-            Login
-          </BasierSquare>
-        </TouchableOpacity>
-        <TouchableOpacity
-          title="Login"
-          onPress={() => this.checkIfLoggedIn()}
-          style={[ {
-            right: -80,
-            textAlign: 'left'
-          }, styles.touchableWrap ]}
-        >
-          <BasierSquare style={[ styleBits.primaryScreenText, styles.touchableText ]}>
-            Signup
-          </BasierSquare>
-        </TouchableOpacity>
+        <Transition appear={this.customFadeTransition} disappear='flip' shared='thisParticularRect'>
+          <View style={[{
+          }, styles.blackRect]}>
+            <BasierSquareBold style={styles.blackRectText}>
+              Zen
+            </BasierSquareBold>
+            <BasierSquareBold style={[styles.blackRectText, styles.blackRectText2]}>
+              Proofing
+            </BasierSquareBold>
+          </View>
+        </Transition>
+        <Transition appear='left' shared='thisParticularButton'>
+          <TouchableOpacity
+            title="Login"
+            onPress={() => this.props.navigation.navigate('Login')}
+            style={[ {
+              left: -120,
+            }, styles.touchableWrap, styles.thisParticularButton ]}
+          >
+            <BasierSquareBold style={[ {
+              textAlign: 'right',
+            }, styleBits.primaryScreenText, styles.touchableText, styles.backButton ]}>
+              Log in
+            </BasierSquareBold>
+          </TouchableOpacity>
+        </Transition>
+        <Transition appear='right' shared='thisParticularOtherButton'>
+          <TouchableOpacity
+            title="Signup"
+            onPress={() => this.props.navigation.navigate('Signup')}
+            style={[ {
+              right: -80,
+              textAlign: 'left'
+            }, styles.touchableWrap, styles.thisParticularOtherButton ]}
+          >
+            <BasierSquareBold style={[ styleBits.primaryScreenText, styles.touchableText ]}>
+              Sign up
+            </BasierSquareBold>
+          </TouchableOpacity>
+        </Transition>
       </ScrollView>
     );
   }
@@ -108,9 +112,12 @@ const styles = StyleSheet.create({
     bottom: fullHeight * 0.35,
     borderRadius: 30,
     backgroundColor: '#000000',
-    padding: 20
+    paddingTop: 20,
+    paddingBottom: 20,
   },
   touchableText: {
-    fontSize: 23,
+    fontSize: 20,
+    paddingLeft: 20,
+    paddingRight: 20
   }
 });

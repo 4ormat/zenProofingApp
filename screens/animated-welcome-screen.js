@@ -1,7 +1,6 @@
 import React from 'react';
 import { ScrollView, StyleSheet, View, TouchableOpacity, Image, Animated, ActivityIndicator } from 'react-native';
 import { styleBits, primaryColor, fullHeight, fullWidth } from '../utils/stylesheets';
-import { BasierSquareBold, BasierSquare } from  '../utils/styled-texts';
 
 export default class AnimatedWelcomeScreen extends React.Component {
   static navigationOptions = {
@@ -12,10 +11,7 @@ export default class AnimatedWelcomeScreen extends React.Component {
     growFromTop: new Animated.Value(0),  // Initial value for height: 0
     moveLogo: new Animated.Value(fullHeight * 0.44),
     hideLogo: new Animated.Value(1),
-    showLogo: new Animated.Value(0),
-    showRectangle: new Animated.Value(0),
-    showButtons: new Animated.Value(0),
-    lowerButtons: new Animated.Value(fullHeight * 0.40)
+    showLogo: new Animated.Value(0)
   }
 
   componentDidMount() {
@@ -37,33 +33,12 @@ export default class AnimatedWelcomeScreen extends React.Component {
           toValue: 1,
           duration: 200,
           delay: 500
-        }),
-        Animated.timing(this.state.showRectangle, {
-          toValue: 1,
-          duration: 200
-        }),
-        Animated.parallel([
-          Animated.timing(this.state.showButtons, {
-            toValue: 1,
-            duration: 500,
-            delay: 200
-          }),
-          Animated.timing(this.state.lowerButtons, {
-            toValue: fullHeight * 0.35,
-            duration: 500
-          })
-        ])
-        
+        })
       ])
-      
     ]).start(() => {
-      // this.props.navigation.navigate('WelcomeScreenNavigator');
+      this.props.navigation.navigate('WelcomeScreenNavigator');
     })
   }
-
-  checkIfLoggedIn = () => {
-    this.props.navigation.navigate('Home');
-  };
 
   render() {
     return (
@@ -93,43 +68,6 @@ export default class AnimatedWelcomeScreen extends React.Component {
             height: fullHeight * 0.021,
             width: fullWidth * 0.20,
           }}/>
-        </Animated.View>
-        <Animated.View style={[{
-          opacity: this.state.showRectangle
-        }, styles.blackRect]}>
-          <BasierSquareBold style={styles.blackRectText}>
-            Zen
-          </BasierSquareBold>
-          <BasierSquareBold style={[styles.blackRectText, styles.blackRectText2]}>
-            Proofing
-          </BasierSquareBold>
-        </Animated.View>
-        <Animated.View
-          title="Login"
-          style={[ {
-            left: -120,
-            opacity: this.state.showButtons,
-            bottom: this.state.lowerButtons
-          }, styles.touchableWrap ]}
-        >
-          <BasierSquare style={[ {
-            textAlign: 'right',
-          }, styleBits.primaryScreenText, styles.touchableText ]}>
-            Login
-          </BasierSquare>
-        </Animated.View>
-        <Animated.View
-          title="Login"
-          style={[ {
-            right: -80,
-            textAlign: 'left',
-            opacity: this.state.showButtons,
-            bottom: this.state.lowerButtons
-          }, styles.touchableWrap ]}
-        >
-          <BasierSquare style={[ styleBits.primaryScreenText, styles.touchableText ]}>
-            Signup
-          </BasierSquare>
         </Animated.View>
       </ScrollView>
     );
@@ -167,9 +105,12 @@ const styles = StyleSheet.create({
     position: 'absolute',
     borderRadius: 30,
     backgroundColor: '#000000',
-    padding: 20
+    paddingTop: 20,
+    paddingBottom: 20
   },
   touchableText: {
     fontSize: 20,
+    paddingLeft: 20,
+    paddingRight: 20
   }
 });

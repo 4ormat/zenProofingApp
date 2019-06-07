@@ -12,6 +12,8 @@ import AnimatedWelcomeScreen from '../screens/animated-welcome-screen';
 const AppSwitchNavigator = createSwitchNavigator({
   AnimatedWelcomeScreen: { screen: AnimatedWelcomeScreen },
   WelcomeScreenNavigator: { screen: WelcomeScreenNavigator },
-}, { initialRouteName: 'AnimatedWelcomeScreen' });
+}, {
+  initialRouteName: 'AnimatedWelcomeScreen',
+});
 
 export default createAppContainer(AppSwitchNavigator);

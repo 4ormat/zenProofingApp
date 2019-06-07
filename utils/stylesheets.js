@@ -4,8 +4,9 @@ export const fullWidth = Dimensions.get('window').width;
 export const fullHeight = Dimensions.get('window').height;
 
 export const primaryColor = '#f0eae9'; // Light Grey
+export const darkGrey = '#43414A'
 
-const primaryTextColor = "#ffffff";
+const primaryTextColor = "#f0eae9";
 const secondaryTextColor = "#000000";
 
 export const styleBits = StyleSheet.create({

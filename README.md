@@ -38,6 +38,8 @@ This here is a React Native only app built using the tools provided by [Expo](ht
 #### What is Expo? 
 Expo is a tool to get you up and running with ReactNative development very quickly without having to touch any native stuff. It's *kind of* like if Docker had a baby with Yeoman. You have to run one command (`expo init`) and you're set up with a project that you can run on your Phone or in a simulator.
 
+Apps built with Expo can be shipped to App/Play Store, at which point end users no longer need the Expo app to see our app :)
+
 #### What is included here?
 This app is a pretty mask on top of fake data. But it's inspired by Format Proofing.
 

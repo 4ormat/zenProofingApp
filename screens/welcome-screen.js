@@ -35,7 +35,7 @@ export default class WelcomeScreen extends React.Component {
             width: fullWidth * 0.20,
           }}/>
         </View>
-        <Transition appear={this.customFadeTransition} disappear='flip' shared='thisParticularRect'>
+        <Transition appear='top' disappear='flip' shared='thisParticularRect'>
           <View style={[{
           }, styles.blackRect]}>
             <BasierSquareBold style={styles.blackRectText}>

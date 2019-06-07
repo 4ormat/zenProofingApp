@@ -36,7 +36,7 @@ export default class ProjectDetailsScreen extends React.Component {
   componentWillUnmount() {
     Animated.timing(this.state.fadeInImages, {
       toValue: 0,
-      duration: 500,
+      duration: 200,
     }).start();
   }
 
@@ -78,7 +78,7 @@ export default class ProjectDetailsScreen extends React.Component {
           flex: 1,
           flexDirection: 'row'
         }}>
-          <Transition delay={true} shared={`imageTransition${this.props.navigation.state.params.index}`}>
+          <Transition shared={`imageTransition${this.props.navigation.state.params.index}`}>
             <Image source={{uri: item.coverImage}} style={[{
               height: fullHeight * 0.08,
               width: fullHeight * 0.08,
@@ -119,15 +119,41 @@ export default class ProjectDetailsScreen extends React.Component {
             color: '#ffffff'
           }}>&lt;</BasierSquareBold>
         </TouchableOpacity>
-        <FlatList
-          style={{
-            marginTop: 30,
-            alignItems: 'center',
-          }} data={prepareColumns(item.images, numColumns)}
-          renderItem={this.renderItem}
-          keyExtractor={(_, index) => `${index}`}
-          numColumns={numColumns}
-        />
+        <View style={{
+          alignSelf: 'center',
+          borderTopColor: '#999',
+          borderTopWidth: 1,
+          marginTop: 50,
+          width: fullWidth * 0.87
+        }}>
+          <View style={{
+            flexDirection: 'row',
+            alignItems: 'center'
+          }}>
+            <BasierSquare style={[{
+              marginLeft: fullWidth * 0.1,
+              borderTopWidth: 1,
+              borderTopColor: darkGrey,
+              color: darkGrey,
+              width: fullWidth * 0.25,
+              paddingTop: 10
+            }]}>IMAGES</BasierSquare>
+            <BasierSquare style={styles.fakeFilters}>ACTIVITY</BasierSquare>
+            <BasierSquare style={styles.fakeFilters}>SETTINGS</BasierSquare>
+          </View>
+        </View>
+        <View>
+          <FlatList
+            style={{
+              marginTop: 30,
+              alignItems: 'center',
+            }} data={prepareColumns(item.images, numColumns)}
+            renderItem={this.renderItem}
+            keyExtractor={(_, index) => `${index}`}
+            numColumns={numColumns}
+          />
+        </View>
+        
       </ScrollView>
     );
   }
@@ -187,6 +213,11 @@ const styles = StyleSheet.create({
     backgroundCOlor: 'transparent'
   },
   imageStyles: {
+  },
+  fakeFilters: {
+    color: '#999999',
+    width: fullWidth * 0.25,
+    paddingTop: 10
   }
 });
 
